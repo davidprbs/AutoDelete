@@ -1,4 +1,5 @@
 FROM python:3.11.3-alpine3.18
+ADD .env .
 RUN apk add --no-cache sqlite
 
 WORKDIR /tmp/install
