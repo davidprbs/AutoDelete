@@ -19,4 +19,4 @@ ENV PYTHONPATH="/app/discord_autodelete.zip${PYTHONPATH:+:$PYTHONPATH}"
 ARG NO_BYTECODE=""
 ENV PYTHONDONTWRITEBYTECODE="{$NO_BYTECODE:+1}"
 
-ENTRYPOINT ["python", "-m", "discord_autodelete", "--cwd-env"]
+ENTRYPOINT ["python", "-m", "discord_autodelete"]
