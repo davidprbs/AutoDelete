@@ -1,4 +1,4 @@
-FROM python:3.11.3-alpine3.18
+FROM python:3.11.9-alpine3.20
 ADD .env .
 RUN apk update && apk add --no-cache sqlite && apk add --no-cache --virtual .pynacl_deps build-base python3-dev libffi-dev
 
