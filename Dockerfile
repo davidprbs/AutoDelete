@@ -1,4 +1,4 @@
-FROM python:3.11.9-alpine3.20
+FROM python:3.9.20-alpine3.20
 ADD .env .
 RUN apk update && apk upgrade
 RUN apk add --no-cache sqlite
